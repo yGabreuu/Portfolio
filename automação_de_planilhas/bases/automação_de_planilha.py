@@ -15,7 +15,8 @@ for nome_tabela in arquivos:
 #transformando a base de csv para excel, alterando a ordem de valores da data e resetado o index.
 tabela_consolidada =tabela_consolidada.sort_values('Data de Venda', ascending=False)
 tabela_reset_index = tabela_consolidada.reset_index(drop=True, inplace=True)
-tabela_consolidada.to_excel('Base_completa.xlsx', index=False)
+#tabela_consolidada.to_excel('Base_completa.xlsx', index=False)
+print(tabela_consolidada)
 
 #3.MANDANDO A BASE DE DADOS PARA O EMAIL DO CLIENTE.
 outlook = win.Dispatch('outlook.application')
