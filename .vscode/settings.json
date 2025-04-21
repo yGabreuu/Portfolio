@@ -12,6 +12,21 @@
             "name": "purinho",
             "database": "world",
             "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "puro",
+            "username": "root",
+            "password": "minhasenha",
+            "database": "docker"
         }
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true
 }
